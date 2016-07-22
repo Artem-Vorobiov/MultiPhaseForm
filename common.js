@@ -1,3 +1,27 @@
+// - ////////////////// - для blur задать цикл или условие
+
+
+    var first = document.getElementById('firstname');
+    var second = document.getElementById('lastname');
+window.addEventListener('click', function(event) {
+
+    if (event.target == first){
+        first.style.backgroundColor = "red";
+    }
+    if (event.target == second) {
+        second.style.backgroundColor = "green";
+    }
+})
+
+first.addEventListener('blur', function(event) {
+    first.style.backgroundColor = "orange";
+})
+second.addEventListener('blur', function(event) {
+    second.style.backgroundColor = "black";
+})
+
+// - ////////////////////////
+
 var fname, lname, gender, country;
 
 function _(x){
@@ -35,7 +59,7 @@ function processPhase3() {
         _('phase3').style.display = 'none';
         _('show_all_data').style.display = "block";
         _('progressBar').value = 100;
-        _('status').innerHTML = "Phase 2 of 3"
+        _('status').innerHTML = "Data Overview";
         
 // LOOK HERE VERY USEFULL !!!!
         
