@@ -6,7 +6,10 @@
     <link rel="stylesheet" href="form.css">
 </head>
 <body>
+  
    <form id='multiphase' onsubmit="return false">
+      <progress id="progressBar" value="0" max="1000" style="width:300px"></progress>
+      <h3 id='status'>Phase 1 of 3</h3>
        <div id="phase1">
            First name: <input id="firstname" name="firstname"><br>
            Last name: <input id="lastname" name="lastname"><br>
@@ -28,13 +31,15 @@
            </select><br>
            <button onclick="processPhase3()">Continue</button>
        </div>
-   </form>
-   <div id="show_all_data">
+          <div id="show_all_data">
        First Name: <span id="display_fname"></span> <br>
        Last Name: <span id="display_lname"></span> <br>
        Gender: <span id="display_gender"></span> <br>
        Country: <span id="display_country"></span> <br>
+       <button onclick="submitForm()">Submit Data</button>
    </div>
+   </form>
+
     
 </body>
 <script src="common.js"></script>
