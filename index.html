@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link rel="stylesheet" href="form.css">
 </head>
 <body>
    <form id='multiphase' onsubmit="return false">
@@ -11,7 +12,17 @@
            Last name: <input id="lastname" name="lastname"><br>
            <button onclick="processPhase1()">Continue</button>
        </div>
+       <div id="phase2">
+           Gender: <select name="gender" id="gender">
+               <option value=""></option>
+               <option value="m">Male</option>
+               <option value="f">Female</option>
+           </select><br>
+           <button onclick="processPhase2()">Continue</button>
+       </div>
+       #phase
    </form>
     
 </body>
+<script src="common.js"></script>
 </html>
