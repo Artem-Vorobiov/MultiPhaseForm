@@ -20,8 +20,21 @@
            </select><br>
            <button onclick="processPhase2()">Continue</button>
        </div>
-       #phase
+       <div id="phase3">
+           Country <select name="country" id="country">
+               <option value="USA">USA</option>
+               <option value="India">India</option>
+               <option value="China">China</option>
+           </select><br>
+           <button onclick="processPhase3()">Continue</button>
+       </div>
    </form>
+   <div id="show_all_data">
+       First Name: <span id="display_fname"></span> <br>
+       Last Name: <span id="display_lname"></span> <br>
+       Gender: <span id="display_gender"></span> <br>
+       Country: <span id="display_country"></span> <br>
+   </div>
     
 </body>
 <script src="common.js"></script>

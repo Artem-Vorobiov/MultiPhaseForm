@@ -24,3 +24,13 @@ function processPhase2() {
         alert("Please choose your gender");
     }
 }
+
+function processPhase3() {
+    country = _("country").value;
+    if (country.length > 0) {
+        _('phase3').style.display = 'none';
+        _('show_all_data').style.display = "block";
+    } else {
+        alert('Please choose your Country');
+    }
+}
